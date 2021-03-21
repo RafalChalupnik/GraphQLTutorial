@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using GraphQL;
+using GraphQL.NewtonsoftJson;
 using GraphQL.Types;
 using GraphQLTutorial.DataAccess;
 using GraphQLTutorial.GraphQL;
