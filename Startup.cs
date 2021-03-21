@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GraphiQl;
 using GraphQLTutorial.DataAccess;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -55,6 +56,8 @@ namespace GraphQLTutorial
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseGraphiQl("/graphql");
 
             app.UseEndpoints(endpoints =>
             {
